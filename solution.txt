@@ -1,0 +1,675 @@
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ cd LetsDoAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ pwd
+/c/Users/user/LetsDoAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/user/LetsDoAssignment/.git/
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ vi EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        EvenOdd.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ vi SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ vi TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        EvenOdd.java
+        SquareOfNumber.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout TodayAssignment
+error: pathspec 'TodayAssignment' did not match any file(s) known to git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout -b TodayAssignment
+Switched to a new branch 'TodayAssignment'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ branch -d TodayAssignment
+bash: branch: command not found
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$  git branch -d TodayAssignment
+fatal: Couldn't look up commit object for HEAD
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ git branch -d TodayAssignment
+fatal: Couldn't look up commit object for HEAD
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ cd LetsDoAssignment
+bash: cd: LetsDoAssignment: No such file or directory
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ cd LetsDoAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ git push origin --delete TodayAssignment
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ git branch -m &lt;TodayAssignment&gt; &lt;Dev&gt;
+bash: syntax error near unexpected token `&'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (TodayAssignment)
+$ git checkout -b Dev
+Switched to a new branch 'Dev'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git status
+On branch Dev
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        EvenOdd.java
+        SquareOfNumber.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git add SquareOfNumber.java
+warning: LF will be replaced by CRLF in SquareOfNumber.java.
+The file will have its original line endings in your working directory
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git config core.autoclrf true
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git add SquareofNumber
+fatal: pathspec 'SquareofNumber' did not match any files
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git add SquareOfNumber
+fatal: pathspec 'SquareOfNumber' did not match any files
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git add SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git commit -m "Initial commit"
+[Dev (root-commit) 705a5dd] Initial commit
+ 1 file changed, 14 insertions(+)
+ create mode 100644 SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git status
+On branch Dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        EvenOdd.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git log
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (HEAD -> Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ vi SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ cat SquareOfNumber.java
+public class SquareOfNumber{
+        public static void main(string [] args)
+        {
+                int num, sq;
+                System.out.println("Enter an Integer Number : ");
+                Scanner sc = new Scanner(System.in);
+                num = sc.nextInt();
+                sq = num*num;
+                System.out.println(" The Square Of a Number is : " +sq);
+        }
+}
+
+
+
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git checkout -b Test
+Switched to a new branch 'Test'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        EvenOdd.java
+        TableOfNumber.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git add EvenOdd.java
+warning: LF will be replaced by CRLF in EvenOdd.java.
+The file will have its original line endings in your working directory
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git config core.autoclrf true
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git add EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git commit -m "Second commit"
+[Test a034a44] Second commit
+ 1 file changed, 13 insertions(+)
+ create mode 100644 EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+        TableOfNumber.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git log
+commit a034a4455fc13cc99069849fe0bad18037c32884 (HEAD -> Test)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:11:09 2021 +0530
+
+    Second commit
+
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git add TableOfNumber.java
+warning: LF will be replaced by CRLF in TableOfNumber.java.
+The file will have its original line endings in your working directory
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git config core.autoclrf true
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git add TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git commit -m "Third commit"
+[Test 3a03cfe] Third commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git log
+commit 3a03cfed99eb7585632e1a0a33b3b743717eb52f (HEAD -> Test)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:13:41 2021 +0530
+
+    Third commit
+
+commit a034a4455fc13cc99069849fe0bad18037c32884
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:11:09 2021 +0530
+
+    Second commit
+
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git Checkout master
+fatal: cannot handle Checkout as a builtin
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git log
+commit 3a03cfed99eb7585632e1a0a33b3b743717eb52f (HEAD -> master, Test)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:13:41 2021 +0530
+
+    Third commit
+
+commit a034a4455fc13cc99069849fe0bad18037c32884
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:11:09 2021 +0530
+
+    Second commit
+
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git add SquareofNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout -b Dev
+fatal: A branch named 'Dev' already exists.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout -b master
+fatal: A branch named 'master' already exists.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git merge SquareofNumber
+merge: SquareofNumber - not something we can merge
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout Dev
+Switched to branch 'Dev'
+M       SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ vi SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git add SquareofNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git commit -m "Some changes added"
+On branch Dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git log
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (HEAD -> Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ cat SquareOfNumber.java
+public class SquareOfNumber{
+        public static void main(string [] args)
+        {
+                int num, sq;
+                System.out.println("Enter an Integer Number : ");
+                Scanner sc = new Scanner(System.in);
+                num = sc.nextInt();
+                sq = num*num;
+                System.out.println(" The Square Of a Number is : " +sq);
+
+}
+
+
+
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git commit -m "Some changes added"
+On branch Dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Dev)
+$ git checkout master
+Switched to branch 'master'
+M       SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git merge Dev
+Already up to date.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git merge Test
+Already up to date.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git log
+commit 3a03cfed99eb7585632e1a0a33b3b743717eb52f (HEAD -> master, Test)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:13:41 2021 +0530
+
+    Third commit
+
+commit a034a4455fc13cc99069849fe0bad18037c32884
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:11:09 2021 +0530
+
+    Second commit
+
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (master)
+$ git checkout Test
+Switched to branch 'Test'
+M       SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git log
+commit 3a03cfed99eb7585632e1a0a33b3b743717eb52f (HEAD -> Test, master)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:13:41 2021 +0530
+
+    Third commit
+
+commit a034a4455fc13cc99069849fe0bad18037c32884
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:11:09 2021 +0530
+
+    Second commit
+
+commit 705a5dd5ee0bb930e67a0193acee3fdf4c2c1452 (Dev)
+Author: Shivani Yogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 11:05:03 2021 +0530
+
+    Initial commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SquareOfNumber.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .SquareOfNumber.java.swp
+        .SquareOfNumber.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git remote add origin https://github.com/ShivaniYogi/LetsDoAssignment.git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git remote --v
+origin  https://github.com/ShivaniYogi/LetsDoAssignment.git (fetch)
+origin  https://github.com/ShivaniYogi/LetsDoAssignment.git (push)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git config --global user.name "ShivaniYogi"
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git config --global user.email "shivaniyogi01@gmail.com"
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=ShivaniYogi
+user.email=shivaniyogi01@gmail.com
+pull.rebase=true
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+core.autoclrf=true
+remote.origin.url=https://github.com/ShivaniYogi/LetsDoAssignment.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1.21 KiB | 308.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ShivaniYogi/LetsDoAssignment.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment (Test)
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ dir
+3D\ Objects        Downloads         My\ Documents                                                                                 Pictures      Templates                   ntuser.dat.LOG1
+AppData            Favorites         NTUSER.DAT                                                                                    PrintHood     TestAgain                   ntuser.dat.LOG2
+Application\ Data  LetsDoAssignment  NTUSER.DAT{4f9e77b6-ce1e-11eb-a4f9-54e1ad6cc36f}.TM.blf                                       Recent        Tracing                     ntuser.ini
+Contacts           LetsLearnGit      NTUSER.DAT{4f9e77b6-ce1e-11eb-a4f9-54e1ad6cc36f}.TMContainer00000000000000000001.regtrans-ms  Saved\ Games  Videos
+Cookies            Links             NTUSER.DAT{4f9e77b6-ce1e-11eb-a4f9-54e1ad6cc36f}.TMContainer00000000000000000002.regtrans-ms  Searches      eclipse-workspace
+Desktop            Local\ Settings   NetHood                                                                                       SendTo        eclipse-workspace-training
+Documents          Music             OneDrive                                                                                      Start\ Menu   git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ git clone https://https://github.com/ShivaniYogi/LetsDoAssignment.git
+fatal: destination path 'LetsDoAssignment' already exists and is not an empty directory.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/Users
+$ pwd
+/c/Users
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/Users
+$ mkdir TestAssignment
+mkdir: cannot create directory ‘TestAssignment’: Permission denied
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/Users
+$ mkdir TestAgain
+mkdir: cannot create directory ‘TestAgain’: Permission denied
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/Users
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ mkdir TestAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ cd TestAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/TestAssignment
+$ git clone https://https://github.com/ShivaniYogi/LetsDoAssignment
+Cloning into 'LetsDoAssignment'...
+fatal: unable to access 'https://https://github.com/ShivaniYogi/LetsDoAssignment/': Could not resolve host: https
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/TestAssignment
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ dir
+$Recycle.Bin  Documents\ and\ Settings  MRP_Debug1-[CY20M10D12-R130.0.BL].log   MSDM-Key.txt  Program\ Files         ProgramData  System\ Volume\ Information  Users    hiberfil.sys  swapfile.sys
+$WinREAgent   DumpStack.log.tmp         MRP_Project-[CY20M10D12-R130.0.BL].log  PerfLogs      Program\ Files\ (x86)  Recovery     TestAssignment               Windows  pagefile.sys
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ git clone https://https://github.com/ShivaniYogi/LetsDoAssignment.git
+Cloning into 'LetsDoAssignment'...
+fatal: unable to access 'https://https://github.com/ShivaniYogi/LetsDoAssignment.git/': Could not resolve host: https
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ dir
+$Recycle.Bin  Documents\ and\ Settings  MRP_Debug1-[CY20M10D12-R130.0.BL].log   MSDM-Key.txt  Program\ Files         ProgramData  System\ Volume\ Information  Users    hiberfil.sys  swapfile.sys
+$WinREAgent   DumpStack.log.tmp         MRP_Project-[CY20M10D12-R130.0.BL].log  PerfLogs      Program\ Files\ (x86)  Recovery     TestAssignment               Windows  pagefile.sys
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ cd GitHubTestproject
+bash: cd: GitHubTestproject: No such file or directory
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ mkdir GitTestAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 /c
+$ cd GitTestAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ ls
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ cd src/
+bash: cd: src/: No such file or directory
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ git clone https://https://github.com/ShivaniYogi/LetsDoAssignment.git
+Cloning into 'LetsDoAssignment'...
+fatal: unable to access 'https://https://github.com/ShivaniYogi/LetsDoAssignment.git/': Could not resolve host: https
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ git clone https://github.com/ShivaniYogi/LetsDoAssignment.git
+Cloning into 'LetsDoAssignment'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 1), reused 9 (delta 1), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ ls LetsDoAssignment
+EvenOdd.java  SquareOfNumber.java  TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment
+$ cd LetsDoAssignment
+
+user@DESKTOP-EOUFQB5 MINGW64 /c/GitTestAssignment/LetsDoAssignment (master)
+$ notepad solution.txt
+
